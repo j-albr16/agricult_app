@@ -1,9 +1,10 @@
-import 'package:agricult_app/screens/marketplace_screen.dart';
-import 'package:agricult_app/screens/new_marketplace_item_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import './providers/marketplace_item.dart';
+import './screens/marketplace_screen.dart';
+import './screens/new_marketplace_item_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-            create: (context) => MarketItem(),)
+            builder: (context) => MarketItem(),)
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
