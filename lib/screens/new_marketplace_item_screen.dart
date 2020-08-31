@@ -7,7 +7,11 @@ class NewMarketPlaceItem extends StatelessWidget {
   static const routeName = '/new-marketplace-item';
   final _form = GlobalKey<FormState>();
 
-  final
+  final _editedProduct = {
+    'title': '',
+    'owner':'',
+    'description': '',
+  };
 
 
   @override
